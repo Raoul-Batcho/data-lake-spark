@@ -21,7 +21,8 @@ Using the song and log datasets, we create a star schema optimized for queries o
                start_time, hour, day, week, month, year, weekday
 
 ### Files
-   etl.py - Script copies data to enviroment for transformation then inserts data into dimension tables on S3
+   #### etl.py  
+        Contains script which copies data to enviroment for transformation then inserts data into dimension tables on S3
         contains four functions:
         
             1- create_spark_session(): creates and returns spark session 
@@ -39,11 +40,12 @@ Using the song and log datasets, we create a star schema optimized for queries o
             4- main():
                   The main function which executes the ETL processes through the above functions.
                   
-   dl.cfg - Stores AWS Login Credentials.
+   #### dl.cfg 
+        Stores AWS Login Credentials.
    
 ### Instructions
-   Create or navigate to an AWS S3 bucket and add the required aws login credentials to the dl.cfg file.
-   Type run etl.py in terminal to start the ETL proces
+   1- Create or navigate to an AWS S3 bucket and add the required aws login credentials to the dl.cfg file.
+   2- Type "run etl.py" in terminal to start the ETL process
 
 ### Starting the program
     1- Add global aws config values in dl.cfg
