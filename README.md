@@ -45,8 +45,10 @@ Using the song and log datasets, we create a star schema optimized for queries o
    
 ### Instructions
    1- Create or navigate to an AWS S3 bucket and add the required aws login credentials to the dl.cfg file.
+   
    2- Type "run etl.py" in terminal to start the ETL process
 
 ### Starting the program
     1- Add global aws config values in dl.cfg
+    
     2- Execute "etl.py".
