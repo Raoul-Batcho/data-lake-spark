@@ -7,10 +7,10 @@ We are tasked with building an ETL pipeline that extracts their data from S3, pr
 ### Schema for Song Play Analysis
 Using the song and log datasets, we create a star schema optimized for queries on song play analysis. This includes the following tables.
 
-  ### Fact Table
+  #### Fact Table
         songplays - records in log data associated with song plays i.e. records with page NextSong
                 songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
-  ### Dimension Tables
+  #### Dimension Tables
         users - users in the app
                 user_id, first_name, last_name, gender, level
         songs - songs in music database
